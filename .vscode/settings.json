@@ -1,5 +1,8 @@
 {
     "files.associations": {
-        "ios": "cpp"
+        "ios": "cpp",
+        "ostream": "cpp",
+        "__locale": "cpp",
+        "iosfwd": "cpp"
     }
 }

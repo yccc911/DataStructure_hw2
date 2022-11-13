@@ -8,7 +8,7 @@ using namespace std;
 
 int main(){
 
-    ofstream result("MergeSort.result", ios::out);
+    ofstream result("QuickSort.result", ios::out);
 
     for(int i=15; i<=30; ++i){
         for(int time=0; time<10; ++time){
@@ -24,7 +24,7 @@ int main(){
 
             clock_t start = clock();
             // sortint...
-            mergeSort(arr, 0, size-1);
+            quickSort(arr, 0, size-1);
             clock_t end = clock();
             result << (double)(end - start)/CLOCKS_PER_SEC << endl;
 

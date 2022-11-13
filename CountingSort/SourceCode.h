@@ -19,8 +19,8 @@ void countSort(int array[], int size) {
   // we cannot assign declare it as int count(max+1) in C++ as
   // it does not support dynamic memory allocation.
   // So, its size is provided statically.
-  int output[10];
-  int count[10];
+  int *output = new int[size];
+  int count[1001];
   int max = array[0];
 
   // Find the largest element of the array
@@ -55,6 +55,8 @@ void countSort(int array[], int size) {
   for (int i = 0; i < size; i++) {
     array[i] = output[i];
   }
+
+  delete []output;
 }
 
 /* // Function to print an array

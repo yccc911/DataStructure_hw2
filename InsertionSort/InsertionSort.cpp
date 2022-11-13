@@ -10,8 +10,8 @@ int main(){
 
     ofstream result("InsertionSort.result", ios::out);
 
-    for(int time=0; time<10; ++time){
-        for(int i=15; i<30; ++i){
+    for(int i=15; i<=30; ++i){
+        for(int time=0; time<10; ++time){
             int size = pow(2, i);
             int *arr = new int[size];
 
